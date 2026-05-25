@@ -25,6 +25,7 @@ export function resolveApiBaseUrl(): string {
 
 export const api = axios.create({
   baseURL: DEFAULT_API_URL,
+  withCredentials: true,
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",
