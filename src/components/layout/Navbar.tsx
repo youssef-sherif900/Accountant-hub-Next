@@ -46,7 +46,7 @@ export function Navbar() {
       <div className="nav-actions">
         {loading ? null : user ? (
           <>
-            <span className="user-greeting">Hi, {user.name.split(" ")[0]}</span>
+            <span style={{ marginRight: "10px" }} className="user-greeting">Hi, {user.name.split(" ")[0]}</span>
             <button
               type="button"
               className="btn btn-ghost"
