@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const DEFAULT_API_URL =
-  process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000/api";
+  process.env.NEXT_PUBLIC_API_URL ?? "https://accountant-hub-laravel-production.up.railway.app/api";
 
 const API_PORT = process.env.NEXT_PUBLIC_API_PORT ?? "8000";
 
@@ -20,7 +20,7 @@ export function resolveApiBaseUrl(): string {
     return DEFAULT_API_URL;
   }
 
-  return `${protocol}//${hostname}:${API_PORT}/api`;
+  return `${protocol}//${hostname}:/api`;
 }
 
 export const api = axios.create({
