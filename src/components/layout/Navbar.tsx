@@ -60,7 +60,7 @@ export function Navbar() {
           </>
         ) : (
           <>
-            <Link href="/login" className="btn btn-ghost" onClick={() => setMenuOpen(false)}>
+            <Link href="/login" style={{ marginRight: "10px" }} className="btn btn-ghost" onClick={() => setMenuOpen(false)}>
               Login
             </Link>
             <Link href="/register" className="btn btn-primary" onClick={() => setMenuOpen(false)}>
@@ -76,7 +76,6 @@ export function Navbar() {
     <header className="navbar">
       <div className="container navbar-inner">
         <Link href="/jobs" className="logo" onClick={() => setMenuOpen(false)}>
-          <span className="logo-mark">AH</span>
           <span className="logo-text">Accountant Hub</span>
         </Link>
 
